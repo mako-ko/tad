@@ -295,11 +295,6 @@ p {
     transition: all 0.2s ease;
 }
 
-.section p {
-    color: var(--color-gray-700);
-    font-size: var(--text-xs);
-}
-
 .form-signin {
     display: flex;
     flex-direction: column;
