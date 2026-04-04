@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tad - sistema gerenciador de tarefas</title>
+    <link href="https://mako-ko.github.io/tad/src/img/tad-icon.svg" rel="icon" />
+
+    <!-- Google Fonts, Playfair Display para títulos e Inter para corpo do texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="https://mako-ko.github.io/tad/src/css/about.css">
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <!-- Barra de Navegação -->
+    <a class="skip-line" href="#conteudo-principal">Pular para o conteúdo principal.</a>
+    <header class="header">
+        <!-- TAD -->
+            <div class="logo-icon">
+                <img loading="lazy" src="https://mako-ko.github.io/tad/src/img/icon.svg"
+                    alt="tad, sistema gerenciador de tarefas">
+            </div>
+        <!-- Menu de Navegação -->
+        <nav class="nav">
+            <ul>
+                <li><a href="https://mako-ko.github.io/tad/src/pages/dashboard.html">Minhas tarefas</a></li>
+                <li><a href="https://mako-ko.github.io/tad/src/pages/newtask.html">Criar tarefa</a></li>
+                <li><a href="https://mako-ko.github.io/tad/src/pages/config.html">Configurações</a></li>
+                <li><a href="https://mako-ko.github.io/tad/src/pages/index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main" id="conteudo-principal" tabindex="-1">
+        <h2>Minhas tarefas</h2>
+
+        <div class="taskboard" role="list" aria-label="Lista de tarefas">
+            
+            <!-- exemplo de tarefa prioritária-->
+            <section class="task-card-frog">
+                <a href="https://mako-ko.github.io/tad/src/pages/00001.html" class="task-link">
+                    <h3>Tarefa 1</h3>
+                    <p>Descrição da tarefa 1.</p>
+                </a>
+                <a href="https://mako-ko.github.io/tad/src/pages/00001-edit.html">
+                    <button class="btn-edit" type="button">Editar</button>
+                </a>
+                <button class="btn-check" type="button">Concluir</button>
+            </section>
+
+            <!-- exemplo de tarefa normal -->
+            <section class="task-card-frog">
+                <a href="https://mako-ko.github.io/tad/src/pages/00002.html" class="task-link">
+                    <h3>Tarefa 2</h3>
+                    <p>Descrição da tarefa 2.</p>
+                </a>
+                <a href="https://mako-ko.github.io/tad/src/pages/00002-edit.html">
+                    <button class="btn-edit" type="button">Editar</button>
+                </a>
+                <button class="btn-check" type="button">Concluir</button>
+            </section>
+
+            <section class="task-card-frog">
+                <a href="https://mako-ko.github.io/tad/src/pages/00003.html" class="task-link">
+                    <h3>Tarefa 3</h3>
+                    <p>Descrição da tarefa 3.</p>
+                </a>
+                <a href="https://mako-ko.github.io/tad/src/pages/00003-edit.html">
+                    <button class="btn-edit" type="button">Editar</button>
+                </a>
+                <button class="btn-check" type="button">Concluir</button>
+            </section>
+
+            <section class="task-card-frog">
+                <a href="https://mako-ko.github.io/tad/src/pages/00004.html" class="task-link">
+                    <h3>Tarefa 4</h3>
+                    <p>Descrição da tarefa 4.</p>
+                </a>
+                <a href="https://mako-ko.github.io/tad/src/pages/00004-edit.html">
+                    <button class="btn-edit" type="button">Editar</button>
+                </a>
+                <button class="btn-check" type="button">Concluir</button>
+            </section>
+
+            <section class="task-card-frog">
+                <a href="https://mako-ko.github.io/tad/src/pages/00005.html" class="task-link">
+                    <h3>Tarefa 5</h3>
+                    <p>Descrição da tarefa 5.</p>
+                </a>
+                <a href="https://mako-ko.github.io/tad/src/pages/00005-edit.html">
+                    <button class="btn-edit" type="button">Editar</button>
+                </a>
+                <button class="btn-check" type="button">Concluir</button>
+            </section>
+
+            <section class="task-card-frog">
+                <a href="https://mako-ko.github.io/tad/src/pages/00006.html" class="task-link">
+                    <h3>Tarefa 6</h3>
+                    <p>Descrição da tarefa 6.</p>
+                </a>
+                <a href="https://mako-ko.github.io/tad/src/pages/00006-edit.html">
+                    <button class="btn-edit" type="button">Editar</button>
+                </a>
+                <button class="btn-check" type="button">Concluir</button>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer" class="footer">2026. tad - sistema gerenciador de tarefas. <br>
+        Marianne L Ferreira. Projeto para o Centro de Educação Profissional - Escola Ténica de Guará.
+    </footer>
 </body>
+
 </html>
