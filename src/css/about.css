@@ -391,7 +391,7 @@ footer {
     background: transparent;
     color: var(--color-gray-900);
     font-size: var(--text-sm);
-    opacity: 0.3;
+    opacity: 0.35;
     text-align: center;
     padding: 1.5rem 1rem;
     min-width: 100%;
