@@ -443,7 +443,7 @@ footer {
 
     .nav a:hover {
         background: transparent;
-        border-bottom-color: #2563eb;
+        border-bottom-color: var(--color-info);
     }
 
     .nav a:active {
