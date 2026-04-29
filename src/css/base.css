@@ -1,0 +1,213 @@
+/* base.css - Estilos comuns a todas as páginas do TAD */
+
+/* Root: define as variáveis de design das fontes, cores e tamanhos de texto */
+:root {
+    /* Fontes */
+    --font-sour-gummy: 'Sour Gummy', sans-serif;
+    --font-noto-sans-mono: 'Noto Sans Mono', monospace;
+
+    /* Tamanhos de Texto */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+
+    /* Cores */
+    --color-primary: #A1FF63;
+    --color-primary-light: #dfffca;
+    --color-primary-dark: #58A624;
+    --color-primary-contrast: #182c00;
+
+    --color-secondary: #f1a363;
+    --color-secondary-light: #fcc5a5;
+    --color-secondary-dark: #ca6d38;
+    --color-secondary-contrast: #3b1a00;
+
+    /* Cores Neutras */
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+
+    /* Cores Semânticas */
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+    --color-info: #643bf6;
+
+    /* Cores Links */
+    --color-link: #71d81d;
+    --color-link-hover: #58A624;
+    --color-link-contrast: #182c00;
+    --color-link-secondary: #f1a363;
+    --color-link-secondary-hover: #ca6d38;
+
+    /* Cores de Fundo */
+    --color-bg-primary: #f7fff2;
+    --color-bg-secondary: #f4f6f3;
+    --color-bg-terciary: #e7ebe5;
+
+    /* Gradientes */
+    --gradient-primary: linear-gradient(135deg, #A1FF63 0%, #58A624 100%);
+    --gradient-secondary: linear-gradient(135deg, #f1a363 0%, #ca6d38 100%);
+    --gradient-gray: linear-gradient(135deg, #f9fafb 0%, #111827 100%);
+    --gradient-success: linear-gradient(135deg, #10b981 0%, #047857 100%);
+    --gradient-warning: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    --gradient-error: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    --gradient-info: linear-gradient(135deg, #643bf6 0%, #4f3bf6 100%);
+}
+
+/* Fonts 
+
+<weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name 
+
+Sour Gummy 
+.sour-gummy-<srgm> {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+Noto Sans Mono
+.noto-sans-mono-<ntsn> {
+    font-family: "Noto Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+*/
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Titulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-sour-gummy);
+    color: var(--color-primary-contrast);
+    line-height: 1.6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--text-4xl);
+}
+
+h2 {
+    font-size: var(--text-3xl);
+}
+
+h3 {
+    font-size: var(--text-2xl);
+}
+
+h4 {
+    font-size: var(--text-xl);
+}
+
+h5 {
+    font-size: var(--text-lg);
+}
+
+h6 {
+    font-size: var(--text-base);
+    font-weight: 800;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: var(--text-base);
+    font-weight: 400;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.logo-icon img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 60px;
+    max-width: 160px;
+    object-fit: contain;
+    transition: opacity 0.2s ease;
+}
+
+.logo:hover .logo-icon img {
+    opacity: 0.8;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    color: var(--color-primary-contrast);
+    transition: all 0.2s ease;
+    letter-spacing: -0.01rem;
+}
+
+.nav a:hover {
+    color: var(--color-primary-dark);
+}
+
+.nav a:active {
+    color: var(--color-primary-dark);
+}
+
+.nav a:focus {
+    outline: none;
+}
+
+.nav a:focus-visible {
+    outline: 2px solid var(--color-primary-dark);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.skip-line {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

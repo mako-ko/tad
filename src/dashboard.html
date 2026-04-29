@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/base.css" />
   </head>
@@ -24,23 +24,26 @@
         <div class="logo-icon">
           <img
             loading="lazy"
-            src="./img/tad-logo.svg"
+            src="./img/icon.svg"
             alt="tad, sistema gerenciador de tarefas"
           />
         </div>
       </a>
       <nav class="nav">
         <ul>
-          <li><a href="./about.html">Sobre o TAD</a></li>
-          <li><a href="./signin.html">Criar conta</a></li>
-          <li><a href="./login.html">Faça login</a></li>
+          <li class="nav-link">
+            <a href="./dashboard.html">Minhas tarefas</a>
+          </li>
+          <li><a href="./newtask.html">Criar tarefa</a></li>
+          <li><a href="./config.html">Configurações</a></li>
+          <li><a href="./index.html">Sair</a></li>
         </ul>
       </nav>
     </header>
     <main class="main" id="conteudo-principal" tabindex="-1">
-      <div class="section">
-        <h1>Bem-vindo ao TAD</h1>
-        <p>Seu sistema de gerenciamento de tarefas Eat The Frog</p>
+      <h1>minhas tarefas</h1>
+      <div class="taskboard">
+        <!-- O conteúdo será renderizado dinamicamente pelo JavaScript -->
       </div>
     </main>
     <footer class="footer">

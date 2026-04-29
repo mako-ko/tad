@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tad - sistema gerenciador de tarefas</title>
+    <link href="./img/tad-icon.svg" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+  </head>
+  <body>
+    <a class="skip-line" href="#conteudo-principal"
+      >Pular para o conteúdo principal.</a
+    >
+    <header class="header">
+      <a class="logo" href="./dashboard.html">
+        <div class="logo-icon">
+          <img
+            loading="lazy"
+            src="./img/icon.svg"
+            alt="tad, sistema gerenciador de tarefas"
+          />
+        </div>
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="./dashboard.html">Minhas tarefas</a></li>
+          <li class="nav-link"><a href="./newtask.html">Criar tarefa</a></li>
+          <li><a href="./config.html">Configurações</a></li>
+          <li><a href="./index.html">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main" id="conteudo-principal" tabindex="-1">
+      <h1>nova tarefa</h1>
+      <div class="taskboard">
+        <div class="task-card-frog">
+          <form class="task-form">
+            <div class="title-task">
+              <input
+                type="text"
+                id="task"
+                name="task-title"
+                placeholder="Tarefa..."
+                required
+              />
+            </div>
+            <div class="form-details">
+              <p>
+                <label for="date">Data:</label>
+                <input
+                  type="datetime"
+                  id="date"
+                  name="date"
+                  placeholder="DD/MM/AAAA"
+                  required
+                />
+              </p>
+              <p>
+                <label for="priority">Prioridade:</label>
+                <select id="priority" name="priority">
+                  <option value="frog">Sapo</option>
+                  <option value="no-frog">Outra</option>
+                </select>
+              </p>
+            </div>
+            <p>
+              <label for="details">Descrição:</label>
+              <textarea
+                name="details"
+                id="details"
+                rows="10"
+                cols="30"
+                placeholder="Coloque aqui os detalhes da tarefa..."
+              ></textarea>
+            </p>
+          </form>
+          <div class="btn-group">
+            <button class="btn-reset" type="reset">Desfazer</button>
+            <button class="btn-save" type="button">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      2026. tad - sistema gerenciador de tarefas. <br />
+      Marianne L Ferreira. Projeto para o Centro de Educação Profissional -
+      Escola Ténica de Guará.
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

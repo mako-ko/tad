@@ -33,14 +33,36 @@
         <ul>
           <li><a href="./about.html">Sobre o TAD</a></li>
           <li><a href="./signin.html">Criar conta</a></li>
-          <li><a href="./login.html">Faça login</a></li>
         </ul>
       </nav>
     </header>
     <main class="main" id="conteudo-principal" tabindex="-1">
       <div class="section">
-        <h1>Bem-vindo ao TAD</h1>
-        <p>Seu sistema de gerenciamento de tarefas Eat The Frog</p>
+        <h1>Acesse sua conta</h1>
+        <form class="form-signin">
+          <p>
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seunome@email.com"
+              required
+            />
+          </p>
+          <p>
+            <label for="senha">Senha:</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Sua senha..."
+              required
+            />
+          </p>
+          <button class="btn-submit" type="submit">Entrar</button>
+        </form>
+        <p>Primeira vez aqui? <a href="./signin.html">Crie uma conta</a></p>
       </div>
     </main>
     <footer class="footer">
